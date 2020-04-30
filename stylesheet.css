@@ -22,7 +22,7 @@ a {
   height:1000px;
   background-color:black;
   background-color: #B3DDD1;
-
+  float:left;
   background-attachment: fixed;
   z-index:3;
 
@@ -67,14 +67,13 @@ a {
 .table{
   text-align: center;
   width:18%;
-  height:750px;;
+  height:750px;
   float:left;
   opacity:0.95;
   background-color: white;
   z-index: 2;
   position:fixed;
-  display:none;
-  margin:5px;
+  margin:1%;
   border-radius: 10px;
 }
 
@@ -140,7 +139,7 @@ input[name="tab_item"] {
   height:900px;
   padding-top:50px;
   float:left;
-  margin: 0 25%;
+  margin: 0 0 0 25% ;
   display:none;
 
 }
@@ -207,8 +206,8 @@ input[name="tab_item"] {
   margin: 0 0.5%;
   height: 50px;
   box-shadow: 3px 3px rgba(0,0,0,0.6);
-  border-bottom: 2px solid #5ab4bd;
-  background-color: #d9d9d9;
+  border-bottom: 2px solid #b3b3b3;
+  background-color:  #cccccc;
   line-height: 50px;
   font-size: 16px;
   text-align: center;
@@ -241,18 +240,6 @@ input[name="tab_name"] {
   padding: 0 0 5%;
   clear: both;
   overflow: hidden;
-}
-
-
-/*選択されているタブのコンテンツのみを表示*/
-#mon:checked ~ #mon_content,
-#tue:checked ~ #tue_content,
-#wed:checked ~ #wed_content,
-#thu:checked ~ #thu_content,
-#fri:checked ~ #fri_content,
-#sat:checked ~ #sat_content,
-#sun:checked ~ #sun_content {
-  display: block;
 }
 
 /*選択されているタブのスタイルを変える*/
@@ -299,13 +286,59 @@ table th,table td{
 .character{
   height:20px;
   font-size:10px;
-  background-color: #c79852;
+  background-color: #b3a046;
   color: white;
-  border:solid 1px #927141;
+  border:solid 1px rgba(0,0,0,0.5);
 }
 
 table td{
   background-color: #e4d4bc;
-  border:solid 1px #af9d85;
+  border:solid 1px rgba(0,0,0,0.5);
   height: 40px;
+}
+
+.right-padding{
+  width:19%;
+  background-color: green;
+  float: right;
+  margin: 1% 0 0 80%;
+  position: fixed;
+  border-radius: 10px;
+  height:600px;
+  opacity:0.95;
+  background-color: white;
+  text-align:center;
+
+}
+
+.right-top-box{
+  display: table;
+  width:90%;
+  height: 30%;
+  margin:5% auto;
+  background-color: #ffe0c1;
+  border-radius: 10px;
+}
+.time-text{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#time-d{
+
+}
+#time-da{
+  font-size:300%;
+  font-weight: bold;
+}
+#time-m{
+
+}
+
+.number{
+  background-color:rgba(230,160,90,0.4) ;
+}
+
+.number0{
+  background-color:rgba(230,160,90,0.2) ;
 }
