@@ -1,0 +1,4 @@
+AuthType     Basic
+AuthName     Noname
+AuthUserFile /.htaccess
+require 
