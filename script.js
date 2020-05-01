@@ -14,7 +14,7 @@ $(function(){
   },1800);
   setTimeout(function(){
     slideLeft.css({'left':"-20%",'opacity':"0.0"}).animate({'left' : '0','opacity':"1.0" }, 2000);
-    slideRight.css({'right':"-20%",'opacity':"0.0"}).animate({'right' : '0','opacity':"1.0" }, 2000);
+    slideRight.css({'right':"-20%",'opacity':"0.0"}).animate({'right' : '1%','opacity':"1.0" }, 2000);
   },1000);
 
   $('#text').fadeIn('slow').css('color','#FFE5C0');
@@ -24,28 +24,43 @@ $(function(){
     $('#text').hide().fadeIn('slow').css('color','#AED4D5').text('Home')
     $('#coming-soon').hide().css('background-color','#AED4D5').fadeIn('slow')
     $('#coming-soon1').hide()
+    $('#contact-tab').hide()
+    $('#news-tab').hide()
+    $('#character-tab').hide()
   });
 
   $('#timetable').click(function(){
     $('#text').hide().fadeIn('slow').css('color','#FFE5C0').text('Timetable')
     $('#coming-soon1').hide().css('background-color','#FFE5C0').fadeIn('slow')
     $('#coming-soon').hide()
+    $('#contact-tab').hide()
+    $('#news-tab').hide()
+    $('#character-tab').hide()
   });
 
   $('#news').click(function(){
     $('#text').hide().fadeIn('slow').css('color','#EAD2DF').text('News')
-    $('#coming-soon').hide().css('background-color','#EAD2DF').fadeIn('slow')
+    $('#news-tab').hide().css('background-color','#EAD2DF').fadeIn('slow')
     $('#coming-soon1').hide()
+    $('#contact-tab').hide()
+    $('#coming-soon').hide()
+    $('#character-tab').hide()
   });
   $('#Character').click(function(){
     $('#text').hide().fadeIn('slow').css('color','#C8A8DA').text('Character')
-    $('#coming-soon').hide().css('background-color','#C8A8DA').fadeIn('slow')
+    $('#character-tab').hide().css('background-color','#C8A8DA').fadeIn('slow')
     $('#coming-soon1').hide()
+    $('#news-tab').hide()
+    $('#coming-soon').hide()
+    $('#contact-tab').hide()
   });
-  $('#Access').click(function(){
-    $('#text').hide().fadeIn('slow').css('color','#F9CC88').text('Access')
-    $('#coming-soon').hide().css('background-color','#F9CC88').fadeIn('slow')
+  $('#contact').click(function(){
+    $('#text').hide().fadeIn('slow').css('color','#F9CC88').text('Contact')
+    $('#contact-tab').hide().css('background-color','#F9CC88').fadeIn('slow')
+    $('#coming-soon').hide()
     $('#coming-soon1').hide()
+    $('#news-tab').hide()
+    $('#character-tab').hide()
   });
 
   $('#mon').click(function(){
