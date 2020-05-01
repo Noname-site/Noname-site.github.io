@@ -1,0 +1,27 @@
+@media(max-width:1000px){
+  .table{
+    width:26%;
+  }
+  .right-padding{
+    display: none;
+  }
+  .page{
+    width:65%;
+    margin:2%;
+    margin: 0 0 0 30% ;
+  }
+}
+/*smartphone*/
+
+@media(max-width:670px){
+  .table{
+    display: none;
+  }
+  .right-padding{
+    display: none;
+  }
+  .page{
+    width:96%;
+    margin:2%;
+  }
+}
