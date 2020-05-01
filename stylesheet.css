@@ -229,12 +229,10 @@ input[name="tab_item"] {
 }
 
 
-/*ラジオボタンを全て消す*/
 input[name="tab_name"] {
   display: none;
 }
 
-/*タブ切り替えの中身のスタイル*/
 .table_content {
   display: none;
   padding: 0 0 5%;
@@ -242,7 +240,7 @@ input[name="tab_name"] {
   overflow: hidden;
 }
 
-/*選択されているタブのスタイルを変える*/
+
 .tabs input:checked + .tab_name{
   position: relative;
   top:3px;
@@ -282,7 +280,7 @@ table th,table td{
   height:20px;
   width:10%;
 
-  border:solid 1px #927141;
+  border:solid 1px rgba(0,0,0,0.2);
 }
 .character{
   height:20px;
