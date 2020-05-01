@@ -1,3 +1,4 @@
+
 $(function(){
     $('.loading').fadeIn('slow');
 
@@ -147,16 +148,27 @@ $(function(){
     if(dayEnglish === dayEnglishList[i]){
   $('.right-top-box').click(function(){
     $('.day').hide().fadeIn('slow').css('color','#F9CC88')
-    $(btnDay[i]).hide().fadeIn('slow')
+
     $('#text').hide().fadeIn('slow').css('color','#FFE5C0').text('Timetable')
     $('#coming-soon1').hide().css('background-color','#FFE5C0').fadeIn('slow')
     $('#coming-soon').hide()
-
+    $(btnDay[i]).hide().fadeIn('slow')
+    for(let j=0 ;j<btnD.length;j++){
+      if(dayEnglish !== dayEnglishList[j]){
+        $(btnDay[j]).hide().fadeOut('slow')
+      }
+    }
      document.getElementById(btnD[i]).checked = true;
 　　 document.getElementById("timetable").checked = true;
 　  });
 　　}
 　}
+
+  const name= ['.name1','.name2','.name3','.name4','.name5'];
+  const nameList=['name1','name2','name3','name4','name5'];
+  for(let i= 0;i<name.length;i++){
+    $(name[i]).text(nameList[i]);
+  }
 
 
 });
