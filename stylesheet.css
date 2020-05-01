@@ -289,12 +289,12 @@ table th,table td{
   font-size:10px;
   background-color: #b3a046;
   color: white;
-  border:solid 1px rgba(0,0,0,0.5);
+  border:solid 1px rgba(0,0,0,0.2);
 }
 
 table td{
   background-color: #e4d4bc;
-  border:solid 1px rgba(0,0,0,0.5);
+  border:solid 1px rgba(0,0,0,0.2);
   height: 40px;
 }
 
