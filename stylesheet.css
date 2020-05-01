@@ -275,12 +275,13 @@ table th,table td{
   border-radius: 5px;
   text-align: center;
   padding: 10px 0;
+    font-size: 10px;
 }
 
 .count{
   height:20px;
   width:10%;
-  font-size: 10px;
+
   border:solid 1px #927141;
 }
 .character{
@@ -308,7 +309,7 @@ table td{
   opacity:0.95;
   background-color: white;
   text-align:center;
-
+  overflow: auto;
 }
 
 .right-top-box{
@@ -341,4 +342,20 @@ table td{
 
 .number0{
   background-color:rgba(230,160,90,0.2) ;
+}
+
+.right-bottom-box{
+  width:90%;
+  height: 64%;
+  margin: auto;
+  background-color: #ffe0c1;
+  border-radius: 10px;
+}
+.twitter-timeline{
+  overflow: auto;
+  height: 300px;
+}
+
+#all-contents{
+  width:100%;
 }
