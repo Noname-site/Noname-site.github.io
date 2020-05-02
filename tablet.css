@@ -1,3 +1,8 @@
+@media(max-width >= 1001px){
+  .table-btn{
+    display: none;
+  }
+}
 @media(max-width:1000px){
   .table{
     width:26%;
@@ -10,10 +15,61 @@
     margin:2%;
     margin: 0 0 0 30% ;
   }
+
 }
 /*smartphone*/
 
 @media(max-width:670px){
+  #smartphone-top{
+    display:block;
+    text-align: center;
+    padding-top:40px;
+    font-weight: bold;
+    font-size: 55px;
+  }
+  .tab_item{
+    width:90%;
+    border-radius: 5px;
+    margin: 1% 4%;
+    height: 50px;
+  }
+  #menu{
+        position: fixed;
+        right:0;
+    display:block;
+    padding:5px;
+    float: right;
+    width:30px;
+    height:30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+  }
+  #menu-btn{
+     padding-top: 6px;
+     padding-left: 6px;
+  }
+  #menu:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  #close{
+        position: fixed;
+        right:0;
+    padding:5px;
+    float: right;
+    width:30px;
+    height:30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+  }
+  #menu-btn{
+     padding-top: 6px;
+     padding-left: 6px;
+  }
+  #close:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+
   .table{
     display: none;
   }
@@ -23,5 +79,26 @@
   .page{
     width:96%;
     margin:2%;
+  }
+  .main{
+    height:1100px;
+
+  }
+
+}
+@media(max-width:850px){
+   .tab_name{
+     width: calc((90%/7));
+     border-radius: 5px;
+     font-size:12px;
+     height: 30px;
+     line-height: 30px;
+     margin: 0 0.7%;
+   }
+}
+@media(max-height:520px){
+  .table{
+    position:absolute;
+
   }
 }
