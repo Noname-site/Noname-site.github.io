@@ -27,6 +27,7 @@ a {
   float:left;
   background-attachment: fixed;
   z-index:3;
+  clear:left;
 
 }
 
@@ -49,7 +50,9 @@ a {
   vertical-align: middle;
   color:white;
 }
-
+#smartphone-top{
+  display:none;
+}
 .loading{
   height: 150px;
   width: 150px;
@@ -64,7 +67,12 @@ a {
   font-size:50px;
 }
 
-
+#menu{
+  display:none;
+}
+#close{
+  display:none;
+}
 
 .table{
   text-align: center;
@@ -79,12 +87,27 @@ a {
   border-radius: 10px;
   overflow: auto;
 }
+.table-btn{
+  text-align: center;
+  width:30%;
+  height:750px;
+  padding-top: 40px;
+  opacity:0.85;
+  background-color: grey;
+  z-index: 3;
+  right:0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: auto;
+  position: fixed;
+  display: none;
+}
 
 .list h1{
   width: calc(100%);
   padding:75px 0px;
-  font-family:'Impact'
-
+  font-family:'Impact';
+  overflow: auto;
 }
 
 .list{
@@ -92,7 +115,7 @@ a {
   text-align: center;
   font-family: 'Times New Roman';
 
-
+  overflow: auto;
 }
 
 .tab_item:hover{
@@ -218,6 +241,7 @@ input[name="tab_item"] {
   border-radius: 10px;
   background-color:#FFE5C0 ;
   width: 90%;
+  height: 50px;
   padding-top:15px;
   padding-left: 5px;
   padding-right: 5px;
@@ -378,7 +402,7 @@ table td{
   border-radius: 10px;
 }
 .twitter-timeline{
-  overflow: auto;
+  overflow: hidden;
   height: 300px;
 }
 
