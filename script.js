@@ -16,7 +16,16 @@ $(function(){
     slideLeft.css({'left':"-20%",'opacity':"0.0"}).animate({'left' : '0','opacity':"1.0" }, 2000);
     slideRight.css({'right':"-20%",'opacity':"0.0"}).animate({'right' : '1%','opacity':"1.0" }, 2000);
   },1000);
-
+  $('#menu').click(function(){
+    $('.table-btn').show();
+    $(this).hide();
+    $('#close').show();
+  });
+  $('#close').click(function(){
+    $('.table-btn').hide();
+    $(this).hide();
+    $('#menu').show();
+  });
   $('#text').fadeIn('slow').css('color','#FFE5C0');
   $('#coming-soon1').hide().css('background-color','#FFE5C0').fadeIn('slow')
 
