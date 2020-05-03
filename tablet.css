@@ -1,6 +1,16 @@
-@media(max-width >= 1001px){
+@media(min-width: 670px){
   .table-btn{
     display: none;
+  }
+  #menu{
+    visibility: hidden;
+    display: none;
+    position: absolute;
+  }
+  #close{
+    visibility: hidden;
+    display: none;
+    position: absolute;
   }
 }
 @media(max-width:1000px){
@@ -31,7 +41,8 @@
     width:90%;
     border-radius: 5px;
     margin: 1% 4%;
-    height: 50px;
+    height: 30px;
+    line-height: 30px;
   }
   #menu{
         position: fixed;
@@ -72,6 +83,11 @@
 
   .table{
     display: none;
+  }
+  .table-btn{
+    display:block;
+    opacity:0.0;
+
   }
   .right-padding{
     display: none;
