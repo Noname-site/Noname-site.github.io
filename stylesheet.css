@@ -89,15 +89,14 @@ a {
 }
 .table-btn{
   text-align: center;
-  width:30%;
+  width:50%;
   height:750px;
   padding-top: 40px;
-  opacity:0.85;
-  background-color: grey;
+  background-color:white;
   z-index: 3;
   right:0;
   border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   overflow: auto;
   position: fixed;
   display: none;
@@ -376,7 +375,7 @@ table td{
 }
 
 #time-d{
-
+  
 }
 #time-da{
   font-size:300%;
